@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    /* CSS styles for the email template */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #cccccc;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333333;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .link {
+      color: #008CBA;
+      text-decoration: none;
+    }
+
+    .highlight {
+      background-color: #FFFFCC;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .automated-message {
+      font-style: italic;
+      color: #999999;
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #0a0a23;
+      padding: 5px 10px;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dear <?= row[1] ?>,</h1>
+
+    <p>Congratulations! You have been selected for the Asterisc Internship.</p>
+
+    <p>It's your chance to make a difference and become involved in open-source industry projects by actively participating and collaborating in their development.</p>
+
+    <p>To stay updated, join the asterisc technocrat Telegram group or WhatsApp group. Join Our group for further updates.</p>
+
+    <p>
+      <strong>WhatsApp Group:</strong>
+      <a href="<?=WAlink?>" class="link">Join the WhatsApp Group</a>
+    </p>
+
+    <p>
+      <strong>Telegram Group:</strong>
+      <a href="https://t.me/asteriscsoft" class="link">Join the Telegram Group</a>
+    </p>
+
+    <p>(For communication purpose you have to join this WhatsApp Group and Telegram Group)</p>
+
+    <p>We are delighted to extend to you the Internship Position at Asterisc Technocrat. <b>Please find attached the official offer letter.</b></p>
+
+    <p>You can view your joining letter by clicking <a href="<?= PDFlink ?>" class="button">View Offer Letter</a>.</p>
+
+    <div class="highlight">
+      <p><strong>Some important/Mandatory points you have to remember during this internship tenure -</strong></p>
+
+      <ul>
+        <li>Kindly update your LinkedIn profile headline to include "Intern at Asterisc Technocrat" and share the Internship Offer Letter received from us.</li>
+        <li>Don't forget to tag Asterisc technocrat and utilize the hashtag #asterisctechnocrat #asterisc</li>
+        <li>Read all Internship Mandatory Instructions <a href="https://technocrat.asterisc.in/offline/instruction.html">Click Here</a></li>
+      </ul>
+    </div>
+
+    <p>Here's the timeline we will be following!</p>
+
+    <ul>
+      <li><b>2024 Batch - ASTERISC TECHNOCRAT.</b></li>
+      <li>Role - <?= row[4] ?></li>
+      <li><?= row[6] ?> - Internship start date.</li>
+      <li>Duration - <?= row[9] ?> Months</li>
+    </ul>
+
+    <p>Congratulations🌟, once again on being selected.</p>
+
+    <p>Thanks for showing interest in Asterisc technocrat Pvt Ltd</p>
+
+    <p>Join us through:</p>
+
+    <ul>
+      <li>Linked In: <a href="https://www.linkedin.com/company/asterisc-technocrat/" class="link">https://www.linkedin.com/company/asterisc-technocrat/</a></li>
+      <li>Telegram: <a href="https://t.me/asteriscsoft" class="link">https://t.me/asteriscsoft</a></li>
+      <li>YouTube: <a href="https://youtube.com/@AsteriscComputerInstitute" class="link">https://youtube.com/@AsteriscComputerInstitute</a></li>
+      <li>Instagram: <a href="https://instagram.com/asterisc.in_nagpur" class="link">https://instagram.com/asterisc.in</a></li>
+    </ul>
+
+    <p>If you have any queries, please feel free to contact us at:</p>
+
+    <ul>
+      <li>Email: asteriscteam@gmail.com</li>
+      <li>Website: <a href="https://www.technocrat.asterisc.in/" class="link">https://www.technocrat.asterisc.in/</a></li>
+    </ul>
+
+    <br>
+    <p>Best Regards,</p>
+
+    <p>Team ASTERISC TECHNOCRAT PVT LTD</p>
+
+    <p class="automated-message">*** This is an automatically generated email, please do not reply. ***</p>
+  </div>
+</body>
+</html>
